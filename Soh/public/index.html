@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Rising Star</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-bg {
+      background-image: url('images/12212576-6357-464d-a118-ed15d0cd54f9.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .service-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+    @media (max-width: 640px) {
+      .service-img {
+        height: 150px;
+      }
+      .hero-bg {
+        background-attachment: scroll;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Navbar -->
+  <nav class="bg-green-700 p-4 text-white">
+    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <div class="flex items-center space-x-3 mb-4 sm:mb-0">
+        <img src="images/logo.png" alt="Logo" class="w-10 h-10 object-contain" />
+        <h1 class="text-xl sm:text-2xl font-extrabold tracking-wide uppercase">Rising Star</h1>
+      </div>
+      <ul class="flex space-x-4 sm:space-x-6">
+        <li><a href="index.html" class="hover:text-yellow-300 text-sm sm:text-base">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300 text-sm sm:text-base">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-300 text-sm sm:text-base">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-bg relative text-white py-32 sm:py-44 text-center">
+    <div class="bg-black bg-opacity-60 w-full h-full absolute inset-0 z-0"></div>
+    <div class="relative z-10 container mx-auto px-4">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 px-2">Reliable Labour Solutions for Every Industry</h2>
+      <p class="text-sm sm:text-md md:text-lg px-4 sm:px-0">Providing skilled and unskilled labour across sectors with professionalism and integrity.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-12 sm:py-20 bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-8 sm:mb-10">Our Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <!-- Construction Labour Card -->
+        <div class="border rounded-lg shadow hover:shadow-lg overflow-hidden transition duration-300">
+          <img src="images/construction.png" alt="Construction Workers" class="service-img">
+          <div class="p-4 sm:p-6 text-center">
+            <h3 class="text-lg sm:text-xl font-bold mb-2">Construction Labour</h3>
+            <p class="text-xs sm:text-sm">Certified, experienced workers for construction sites, available on demand.</p>
+          </div>
+        </div>
+        
+        <!-- Cleaning Staff Card -->
+        <div class="border rounded-lg shadow hover:shadow-lg overflow-hidden transition duration-300">
+          <img src="images/cleaning.png" alt="Cleaning Staff" class="service-img">
+          <div class="p-4 sm:p-6 text-center">
+            <h3 class="text-lg sm:text-xl font-bold mb-2">Cleaning Staff</h3>
+            <p class="text-xs sm:text-sm">Trained janitors and housekeeping staff for industrial and commercial setups.</p>
+          </div>
+        </div>
+        
+        <!-- Industrial Labour Card -->
+        <div class="border rounded-lg shadow hover:shadow-lg overflow-hidden transition duration-300">
+          <img src="images/industrial.png" alt="Industrial Workers" class="service-img">
+          <div class="p-4 sm:p-6 text-center">
+            <h3 class="text-lg sm:text-xl font-bold mb-2">Industrial Labour</h3>
+            <p class="text-xs sm:text-sm">Reliable and trained industrial workers for manufacturing, warehousing, and production tasks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center p-4 text-sm sm:text-base">
+    <p>&copy; 2025 Rising Star. All rights reserved.</p>
+  </footer>
+</body>
+</html>

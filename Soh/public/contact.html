@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rising Star - Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-green-700 p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold uppercase">Rising Star</h1>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-300">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="py-20 text-center px-4">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold mb-6">Contact Us</h2>
+      <div class="text-lg mb-8">
+        <p><strong>Phone:</strong>  00966-569319867</p>
+        <p><strong>Email:</strong> info@risingstarksa.com</p>
+      </div>
+      <form action="/send" method="POST" class="max-w-md mx-auto space-y-4">
+  <input type="text" name="name" placeholder="Your Name" class="w-full p-2 border rounded" required />
+  <input type="email" name="email" placeholder="Your Email" class="w-full p-2 border rounded" required />
+  <textarea name="message" placeholder="Your Message" rows="4" class="w-full p-2 border rounded" required></textarea>
+  <button type="submit" class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800">Send Message</button>
+</form>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center p-4">
+    <p>&copy; 2025 Rising Star. All rights reserved.</p>
+  </footer>
+</body>
+</html>

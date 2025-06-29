@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Rising Star - About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <style>
+    .hero-about {
+      background-image: url('images/banner.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 50vh; /* Smaller on mobile */
+    }
+    @media (min-width: 768px) {
+      .hero-about {
+        min-height: 60vh; /* Taller on desktop */
+      }
+    }
+    .service-icon {
+      width: 60px; /* Smaller on mobile */
+      height: 60px;
+    }
+    @media (min-width: 768px) {
+      .service-icon {
+        width: 80px; /* Larger on desktop */
+        height: 80px;
+      }
+    }
+    .leader-card {
+      width: 100%; /* Full width on mobile */
+      max-width: 280px; /* Constrained on desktop */
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Navbar - Responsive -->
+  <nav class="bg-green-700 p-3 sm:p-4 text-white">
+    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+      <div class="flex items-center mb-3 sm:mb-0">
+        <h1 class="text-xl sm:text-2xl font-bold uppercase animate__animated animate__fadeIn">Rising Star</h1>
+      </div>
+      <ul class="flex space-x-3 sm:space-x-6 mt-3 sm:mt-0">
+        <li><a href="index.html" class="hover:text-yellow-300 text-sm sm:text-base">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300 text-sm sm:text-base font-semibold">About</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-300 text-sm sm:text-base">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section - Responsive -->
+  <section class="hero-about relative text-white flex items-center justify-center">
+    <div class="bg-black bg-opacity-50 w-full h-full absolute"></div>
+    <div class="relative z-10 text-center px-4 py-12 sm:py-20">
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 animate__animated animate__fadeInDown">
+        Built on Trust
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-1s">
+        Delivering reliable labor solutions with unmatched professionalism and dedication.
+      </p>
+    </div>
+  </section>
+
+  <!-- About Content - Responsive Grid -->
+  <section class="py-10 sm:py-16 px-4 sm:px-6">
+    <div class="container mx-auto">
+      <!-- Who We Are -->
+      <div class="max-w-4xl mx-auto text-center mb-10 sm:mb-16">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">Who We Are</h2>
+        <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+          Rising Star specializes in providing skilled construction, industrial, and cleaning labor. We focus on rigorous training, safety compliance, and timely deployment to ensure your projects stay on track. Our team is committed to being your trusted labor partner.
+        </p>
+      </div>
+
+      <!-- Services - Responsive 3-column → 1-column on mobile -->
+      <div class="mb-10 sm:mb-16">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-10">Our Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+          <!-- Construction -->
+          <div class="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+            <div class="service-icon mx-auto mb-3 sm:mb-4 bg-green-100 rounded-full flex items-center justify-center">
+              <img src="images/construction.png" alt="Construction" class="w-8 sm:w-10 h-8 sm:h-10">
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-center">Construction</h3>
+            <p class="text-gray-600 text-xs sm:text-sm">
+              Skilled laborers for all construction needs, from groundwork to finishing.
+            </p>
+          </div>
+          
+          <!-- Industrial -->
+          <div class="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+            <div class="service-icon mx-auto mb-3 sm:mb-4 bg-green-100 rounded-full flex items-center justify-center">
+              <img src="images/industrial.png" alt="Industrial" class="w-8 sm:w-10 h-8 sm:h-10">
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-center">Industrial</h3>
+            <p class="text-gray-600 text-xs sm:text-sm">
+              Factory workers, machine operators, and warehouse staff.
+            </p>
+          </div>
+          
+          <!-- Cleaning -->
+          <div class="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+            <div class="service-icon mx-auto mb-3 sm:mb-4 bg-green-100 rounded-full flex items-center justify-center">
+              <img src="images/cleaning.png" alt="Cleaning" class="w-8 sm:w-10 h-8 sm:h-10">
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-center">Cleaning</h3>
+            <p class="text-gray-600 text-xs sm:text-sm">
+              Professional cleaners for offices, sites, and facilities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Values - Responsive 2-column → 1-column on mobile -->
+      <div class="bg-green-50 rounded-lg sm:rounded-xl p-6 sm:p-8 mb-10 sm:mb-16">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-6 sm:mb-8">Our Promise</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <div>
+            <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-green-700">Quality Assurance</h3>
+            <ul class="space-y-2 sm:space-y-3">
+              <li class="flex items-start">
+                <span class="text-green-600 mr-2">✓</span>
+                <span class="text-sm sm:text-base">Every worker is interviewed and skills-tested</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-600 mr-2">✓</span>
+                <span class="text-sm sm:text-base">Regular on-site performance checks</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-green-700">Client Focus</h3>
+            <ul class="space-y-2 sm:space-y-3">
+              <li class="flex items-start">
+                <span class="text-green-600 mr-2">✓</span>
+                <span class="text-sm sm:text-base">24/7 availability for urgent requests</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-600 mr-2">✓</span>
+                <span class="text-sm sm:text-base">Flexible short-term and long-term staffing</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership - Responsive Centered Card -->
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-6">Our Founder</h2>
+        <div class="flex justify-center">
+          <div class="leader-card bg-white p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+            <div class="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-3 sm:mb-4 rounded-full bg-gray-200 overflow-hidden">
+              <img src="images/ceo.png" alt="Ibrahim" class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-lg sm:text-xl font-semibold">Ibrahim</h3>
+            <p class="text-green-600 text-sm sm:text-base mb-2 sm:mb-3">Founder & Director</p>
+            <p class="text-gray-600 text-xs sm:text-sm">
+              Hands-on leader ensuring every client receives personalized service and quality labor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer - Responsive Stacked Links -->
+  <footer class="bg-green-700 text-white text-center p-4 sm:p-6">
+    <div class="container mx-auto">
+      <p class="mb-3 sm:mb-4 text-sm sm:text-base">&copy; 2025 Rising Star. All rights reserved.</p>
+      <div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-6">
+        <a href="#" class="hover:text-yellow-300 text-xs sm:text-sm">Privacy</a>
+        <a href="#" class="hover:text-yellow-300 text-xs sm:text-sm">Terms</a>
+        <a href="contact.html" class="hover:text-yellow-300 text-xs sm:text-sm">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
